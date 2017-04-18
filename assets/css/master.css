@@ -1,0 +1,289 @@
+/*****************************************
+
+FONTY
+
+*****************************************/
+
+@font-face {
+    font-family: "book";
+    src: url("../fonts/GothamRounded-Book.otf");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("../fonts/GothamRounded-Bold.otf");
+}
+
+@font-face {
+    font-family: "medium";
+    src: url("../fonts/GothamRounded-Medium.otf");
+}
+
+@font-face {
+    font-family: "light";
+    src: url("../fonts/GothamRounded-Light.otf");
+}
+
+/*****************************************
+
+OBECNÉ
+
+*****************************************/
+
+h1, h2, h3, h4, h5, p, span {
+  font-weight: normal !important;
+}
+
+body {
+  font-family: book;
+}
+
+.bold {
+  font-family: bold;
+}
+
+.medium {
+  font-family: medium;
+}
+
+.light {
+  font-family: light;
+}
+
+/*****************************************
+
+PAGE 1
+
+*****************************************/
+
+/*****************************************
+
+Jumbotron & nav
+
+*****************************************/
+
+.jumbotron {
+  background-image: radial-gradient(50% 100%, #789FE5 0%, #476CD4 100%);
+  color: #fff;
+  font-family: light;
+}
+
+nav {
+  width: 940px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  margin-right: -3px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+}
+
+nav ul a:hover {
+  font-family: medium;
+}
+
+.active {
+  font-family: medium;
+}
+
+.podtrzitko {
+  background: #fff;
+  height: 3px;
+  border-radius: 50px;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  bottom: -5px;
+}
+
+.podtrzitko1 {
+  width: 54px;
+}
+
+.jumbotronText h1 span {
+  display: block;
+}
+
+.jumbotronText h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.jumbotronText h1 span:last-child {
+  font-size: 46px;
+}
+
+.jumbotron {
+  height: 520px;
+}
+
+.jumbotronText {
+  margin-top: 75px;
+}
+
+/*****************************************
+
+Bubliny
+
+*****************************************/
+
+.bubliny {
+  text-align: center;
+  position: relative;
+  top: -174px;
+  height: 150px;
+}
+
+.bublina {
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+  border-radius: 15px;
+  width: 350px;
+  margin: 0 25px;
+  padding-bottom: 32px;
+}
+
+.bublina h3 {
+  font-family: medium;
+  font-size: 28px;
+  color: #495E98;
+  width: 280px;
+  margin: 20px auto;
+  margin-top: 25px;
+  line-height: 35px;
+}
+
+.bublina ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: calc(32px);
+}
+
+.bublina li {
+  list-style: none;
+  line-height: 31px;
+  font-size: 17px;
+  color: #707070;
+}
+
+.zjistitVice {
+  background: #6A8FF5;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  padding: 7.5px 15px;
+  padding-top: 9.5px;
+  text-decoration: none;
+}
+
+.zjistitVice:hover {
+  background: #5674C8;
+}
+
+/*****************************************
+
+texty
+
+*****************************************/
+
+.texty {
+  width: calc(100% - 100px);
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.textovaCast {
+  width: calc(100% - 180px);
+  max-width: 740px;
+  display: inline-block;
+}
+
+.textovaCast p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #717A88;
+}
+
+.textovaCast h2 {
+  font-size: 31px;
+  line-height: 31px;
+  color: #555F6E;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.oddil {
+  margin: 75px auto;
+  width: 100%;
+}
+
+.oddil img {
+  width: 120px;
+  display: inline-block;
+  float: right;
+  margin-top: 50px;
+}
+
+.pravyText .textovaCast {
+  float: none;
+  text-align: right;
+}
+
+.pravyText {
+  text-align: right;
+}
+
+.pravyText img {
+  float: left;
+}
+
+.napisteNam a {
+  font-family: medium;
+  font-size: 24px;
+  color: #fff;
+  padding: 19px 35px;
+  padding-bottom: 16px;
+  border-radius: 10px;
+  background: #476CD4;
+  text-decoration: none;
+}
+
+.napisteNam a:hover {
+  background: #3855A8;
+}
+
+.napisteNam span {
+  font-size: 12px;
+  color: #B8B8B8;
+  display: block;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.napisteNam {
+  width: 230px;
+  margin: 0 auto;
+}
