@@ -69,7 +69,8 @@ jumbotron & nav
 }
 
 nav {
-  width: 940px;
+  width: calc(100% - 100px);
+  max-width: 940px;
   height: 50px;
   margin: 0 auto;
   padding-top: 28px;
@@ -129,6 +130,9 @@ nav ul a:hover {
 .jumbotronText h1 {
   text-align: center;
   font-size: 40px;
+  width: calc(100% - 100px);
+  max-width: 940px;
+  margin: auto;
 }
 
 .jumbotronText h1 span:last-child {
@@ -159,6 +163,7 @@ bubliny
 .bublina {
   display: inline-block;
   background: #FFFFFF;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
   border-radius: 15px;
   width: 350px;
@@ -170,7 +175,7 @@ bubliny
   font-family: medium;
   font-size: 28px;
   color: #495E98;
-  width: 280px;
+  width: calc(100% - 35px);
   margin: 20px auto;
   margin-top: 25px;
   line-height: 35px;
@@ -377,4 +382,119 @@ footer {
 
 .social a:last-child {
   margin-right: 0 !important;
+}
+
+@media only screen and (max-width: 1250px) {
+  .bublina {
+    width: 300px;
+    margin: 0 18px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bublina {
+    width: 280px;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .bublina {
+    width: 450px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 1px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+  }
+
+  .bublina:last-child {
+    margin-bottom: 0;
+  }
+
+  .bubliny {
+    height: auto;
+    margin-bottom: -100px;
+  }
+
+  .bublina h3 {
+    width: calc(100% - 120px);
+  }
+}
+
+@media only screen and (max-width: 803px) {
+  .bubliny {
+    top: -150px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  nav ul {
+    display: none;
+    /* musí se nahradit za mobilni menu */
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .jumbotron h1 {
+    font-size: 32px;
+  }
+
+  .jumbotron h1 span:last-child {
+    font-size: 45px;
+  }
+
+  .oddil img {
+    float: none;
+    display: block;
+    width: calc(100% - 50px);
+    max-width: 110px;
+    margin-top: 15px;
+  }
+
+  .textovaCast {
+    width: 100%;
+  }
+
+  .textovaCast h2 {
+    line-height: 42px;
+  }
+
+  .pravyText .textovaCast {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .bublina {
+    width: calc(100% - 50px);
+  }
+
+  .bublina h3 {
+    width: calc(100% - 50px);
+  }
+
+  .jumbotronText {
+    margin-top: 50px;
+  }
+
+  .jumbotronText h1 {
+    width: calc(100% - 50px);
+    font-size: 27px;
+  }
+
+  .jumbotron h1 span:last-child {
+    font-size: 41px;
+  }
+
+  .oddil:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  .jumbotronText {
+    margin-top: 40px;
+  }
 }
