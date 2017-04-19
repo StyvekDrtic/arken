@@ -62,10 +62,78 @@ jumbotron & nav
 
 *****************************************/
 
+.mobilniMenu {
+  display: none;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+}
+
+.mobilniMenu ul {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobilniMenu ul li {
+  color: #555F6E;
+  list-style: none;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.mobilniMenu a {
+  text-decoration: none;
+}
+
+.mobilniMenu button i {
+  text-decoration: none;
+}
+
 .jumbotron {
   background-image: radial-gradient(50% 100%, #789FE5 0%, #476CD4 100%);
   color: #fff;
   font-family: light;
+}
+
+.logo2 {
+  margin-left: 30px;
+  margin-top: 28px;
+}
+
+.zavrit {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.zavrit i {
+  font-size: 35px;
+  color: #555F6E;
+}
+
+.otevritMenu {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  display: none;
+}
+
+.otevritMenu i {
+  font-size: 30px;
+  color: #fff;
+}
+
+section, footer {
+  transition: all 0.25s ease-out;
 }
 
 nav {
@@ -434,6 +502,14 @@ footer {
     display: none;
     /* musí se nahradit za mobilni menu */
   }
+
+  .otevritMenu {
+    display: block;
+  }
+
+  .footerLeva ul {
+    width: 130px;
+  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -464,6 +540,33 @@ footer {
   .pravyText .textovaCast {
     text-align: left !important;
   }
+
+  .footerPrava {
+    float: none;
+    margin-top: 0;
+    text-align: left;
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .social a:first-child {
+    margin-left: 0;
+  }
+
+  .footerLeva ul {
+    width: auto;
+  }
+
+  .footerLeva ul:first-child {
+    margin-right: 50px;
+  }
+
+  .footerLeva {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #717a88;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -473,10 +576,6 @@ footer {
 
   .bublina h3 {
     width: calc(100% - 50px);
-  }
-
-  .jumbotronText {
-    margin-top: 50px;
   }
 
   .jumbotronText h1 {
@@ -491,9 +590,32 @@ footer {
   .oddil:first-child {
     margin-top: 0;
   }
+
+  nav {
+    width: calc(100% - 60px);
+  }
+
+  .otevritMenu {
+    right: 30px;
+  }
 }
 
 @media only screen and (max-width: 401px) {
+  .jumbotronText {
+    margin-top: 60px;
+  }
+
+  .jumbotronText h1 {
+    width: calc(100% - 50px);
+    font-size: 23px;
+  }
+
+  .jumbotron h1 span:last-child {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
   .jumbotronText {
     margin-top: 40px;
   }

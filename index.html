@@ -5,30 +5,58 @@
     <title>Arken</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/master.css">
   </head>
   <body>
-    <section class="jumbotron">
-      <nav>
-        <a href="#">
-          <img class="logo" src="assets/img/logo.png" alt="logo">
+    <div class="mobilniMenu animated">
+      <a href="#">
+        <img class="logo logo2" src="assets/img/logo2.png" alt="logo">
+      </a>
+      <button class="zavrit">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <ul>
+        <a class="active" href="#">
+          <li>Home</li>
         </a>
-        <ul>
-          <a class="active" href="#">
-            <li>Home</li><div class="podtrzitko podtrzitko1"></div>
-          </a>
+        <a href="#">
+          <li>O nás</li>
+        </a>
+        <a href="#">
+          <li>Naše práce</li>
+        </a>
+        <a href="#">
+          <li>Kontakt</li>
+        </a>
+      </ul>
+    </div>
+    <section class="jumbotron">
+      <header>
+        <nav>
           <a href="#">
-            <li>O nás</li>
+            <img class="logo" src="assets/img/logo.png" alt="logo">
           </a>
-          <a href="#">
-            <li>Naše práce</li>
-          </a>
-          <a href="#">
-            <li>Kontakt</li>
-          </a>
-        </ul>
-      </nav>
+          <button class="otevritMenu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <ul>
+            <a class="active" href="#">
+              <li>Home</li><div class="podtrzitko podtrzitko1"></div>
+            </a>
+            <a href="#">
+              <li>O nás</li>
+            </a>
+            <a href="#">
+              <li>Naše práce</li>
+            </a>
+            <a href="#">
+              <li>Kontakt</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
       <div class="jumbotronText">
         <h1><span>Dělejte to co umíte nejlépe</span><span class="medium">my se postaráme o vše ostatní</span></h1>
       </div>
@@ -136,6 +164,8 @@
           </div>
         </div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="assets/js/app.js" charset="utf-8"></script>
     </footer>
   </body>
 </html>
