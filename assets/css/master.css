@@ -452,6 +452,12 @@ footer {
   margin-right: 0 !important;
 }
 
+/*****************************************
+
+queries
+
+*****************************************/
+
 @media only screen and (max-width: 1250px) {
   .bublina {
     width: 300px;
@@ -618,5 +624,137 @@ footer {
 @media only screen and (max-width: 350px) {
   .jumbotronText {
     margin-top: 40px;
+  }
+}
+
+/*****************************************
+
+foceni
+
+*****************************************/
+
+/*****************************************
+
+cely asi
+
+*****************************************/
+
+.jumbotronSlim {
+  height: 106px;
+}
+
+.textovaSekce h1 {
+  font-family: medium;
+  font-size: 38px;
+  color: #555F6E;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.textovaSekce p {
+  font-size: 18px;
+  color: #555F6E;
+  line-height: 30px;
+}
+
+.textovaSekce p a {
+  font-family: medium;
+  color: #476CD4;
+  text-decoration: underline;
+}
+
+.textovaSekce ul {
+  padding-left: 20px;
+}
+
+.textovaSekce ul li {
+  font-size: 18px;
+  color: #555F6E;
+  line-height: 30px;
+}
+
+.textovaSekceInner {
+  width: calc(100% - 100px);
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.textovyBlock {
+  width: calc(62% - 80px);
+  max-width: 480px;
+  display: inline-block;
+}
+
+.mainObrazek {
+  width: 100%;
+  display: block;
+}
+
+.obrazkovyBlock {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 38%;
+  margin-top: 25px;
+}
+
+.obrazkovyBlock a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.obrazkovyBlock a span {
+  font-family: medium;
+  font-size: 15px;
+  color: #555F6E;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 3px;
+}
+
+.obrazkovyBlock a {
+  display: block;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.textovaSekce .napisteNam {
+  width: 231px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+/*****************************************
+
+queries
+
+*****************************************/
+
+@media only screen and (max-width: 767px) {
+  .fotografovani .obrazkovyBlock {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .fotografovani .textovyBlock {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .fotografovani h1 {
+    margin-top: 40px;
+  }
+
+  .textovaSekceInner {
+    width: calc(100% - 50px);
   }
 }
