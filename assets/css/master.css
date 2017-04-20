@@ -10,6 +10,11 @@ fonts
 }
 
 @font-face {
+    font-family: "italic";
+    src: url("../fonts/GothamRounded-BookItalic.otf");
+}
+
+@font-face {
     font-family: "bold";
     src: url("../fonts/GothamRounded-Bold.otf");
 }
@@ -129,13 +134,14 @@ jumbotron & nav
 }
 
 .otevritMenu {
-  position: absolute;
-  top: 32px;
-  right: 50px;
   display: none;
   background: none;
   border: none;
   outline: 0;
+  vertical-align: top;
+  margin-top: 9px;
+  text-align: right;
+  float: right;
 }
 
 .otevritMenu i {
@@ -526,7 +532,7 @@ queries
   }
 
   .otevritMenu {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -613,10 +619,6 @@ queries
     width: calc(100% - 60px);
   }
 
-  .otevritMenu {
-    right: 30px;
-  }
-
   .jumbotronText {
     margin-top: 40px;
   }
@@ -663,10 +665,6 @@ cely asi
 
 .jumbotronSlim nav {
   padding-top: 20px;
-}
-
-.jumbotronSlim .otevritMenu {
-  top: 27px;
 }
 
 .textovaSekce h1 {
@@ -927,12 +925,12 @@ asi cely
 }
 
 .clovek h2 {
-  font-size: 28px;
+  font-size: 23px;
   color: #555F6E;
   margin-top: 0;
-  margin-bottom: 0px;
   max-width: calc(100% - 25px - 70px);
-  line-height: 38px;
+  line-height: 33px;
+  margin-bottom: -2px;
 }
 
 .prijmeni {
@@ -940,8 +938,8 @@ asi cely
 }
 
 .clovek h3 {
-  font-family: mediumItalic;
-  font-size: 17px;
+  font-family: italic;
+  font-size: 16px;
   color: #929CB8;
   margin: 0;
   margin-bottom: 15px;
@@ -956,6 +954,10 @@ asi cely
   padding: 0;
 }
 
+.kontakty h1 {
+  margin-bottom: 40px;
+}
+
 .kontaktyClovek span {
   font-family: bold;
   font-size: 11px;
@@ -966,7 +968,7 @@ asi cely
 }
 
 .kontaktyClovek a {
-  font-size: 17px;
+  font-size: 16px;
   color: #555F6E;
   text-decoration: none;
   margin: 0;
