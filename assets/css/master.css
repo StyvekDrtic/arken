@@ -118,6 +118,9 @@ jumbotron & nav
   position: absolute;
   top: 30px;
   right: 30px;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .zavrit i {
@@ -171,7 +174,7 @@ nav ul li {
 nav ul a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   padding: 0 20px;
   text-align: center;
@@ -196,7 +199,7 @@ nav ul a:hover {
 }
 
 .podtrzitko1 {
-  width: 54px;
+  width: 47px;
 }
 
 .jumbotronText h1 span {
@@ -216,7 +219,7 @@ nav ul a:hover {
 }
 
 .jumbotron {
-  height: 520px;
+  padding-bottom: 260px;
 }
 
 .jumbotronText {
@@ -249,12 +252,12 @@ bubliny
 
 .bublina h3 {
   font-family: medium;
-  font-size: 28px;
+  font-size: 23px;
   color: #495E98;
-  width: calc(100% - 35px);
-  margin: 20px auto;
+  width: calc(100% - 80px);
+  margin: 15px auto;
   margin-top: 25px;
-  line-height: 35px;
+  line-height: 31px;
 }
 
 .bublina ul {
@@ -265,8 +268,8 @@ bubliny
 
 .bublina li {
   list-style: none;
-  line-height: 31px;
-  font-size: 17px;
+  line-height: 30px;
+  font-size: 16px;
   color: #707070;
 }
 
@@ -303,8 +306,8 @@ texty
 }
 
 .textovaCast p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 29px;
   color: #717A88;
 }
 
@@ -313,7 +316,7 @@ texty
   line-height: 31px;
   color: #555F6E;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .oddil {
@@ -409,9 +412,9 @@ footer {
 }
 
 .footerLeva ul li {
-  font-size: 19px;
+  font-size: 15px;
   list-style: none;
-  line-height: 37px;
+  line-height: 31px;
 }
 
 .footerLeva ul li a {
@@ -435,7 +438,7 @@ footer {
 .footerPrava a {
   font-family: medium;
   color: #fff;
-  font-size: 19px;
+  font-size: 16px;
   display: block;
   text-decoration: none;
   position: relative;
@@ -512,17 +515,18 @@ queries
 }
 
 @media only screen and (max-width: 760px) {
+  .footerLeva ul {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
   nav ul {
     display: none;
-    /* musí se nahradit za mobilni menu */
   }
 
   .otevritMenu {
     display: block;
-  }
-
-  .footerLeva ul {
-    width: 130px;
   }
 }
 
@@ -612,12 +616,17 @@ queries
   .otevritMenu {
     right: 30px;
   }
+
+  .jumbotronText {
+    margin-top: 40px;
+  }
+
+  .jumbotron {
+    padding-bottom: 200px;
+  }
 }
 
 @media only screen and (max-width: 401px) {
-  .jumbotronText {
-    margin-top: 60px;
-  }
 
   .jumbotronText h1 {
     width: calc(100% - 50px);
@@ -648,22 +657,31 @@ cely asi
 *****************************************/
 
 .jumbotronSlim {
-  height: 106px;
+  height: 90px;
+  padding: 0;
+}
+
+.jumbotronSlim nav {
+  padding-top: 20px;
+}
+
+.jumbotronSlim .otevritMenu {
+  top: 27px;
 }
 
 .textovaSekce h1 {
   font-family: medium;
-  font-size: 38px;
+  font-size: 31px;
   color: #555F6E;
   width: 100%;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .textovaSekce p {
-  font-size: 18px;
+  font-size: 16px;
   color: #555F6E;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 .textovaSekce p a {
@@ -677,15 +695,16 @@ cely asi
 }
 
 .textovaSekce ul li {
-  font-size: 18px;
+  font-size: 16px;
   color: #555F6E;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 .textovaSekceInner {
   width: calc(100% - 100px);
   max-width: 940px;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .textovyBlock {
