@@ -208,6 +208,14 @@ nav ul a:hover {
   width: 47px;
 }
 
+.podtrzitko2 {
+  width: 89px;
+}
+
+.podtrzitko3 {
+  width: 71px;
+}
+
 .jumbotronText h1 span {
   display: block;
 }
@@ -667,6 +675,22 @@ cely asi
   padding-top: 20px;
 }
 
+.textovaSekce {
+  min-height: calc(100vh - 90px - 283px - 50px - 50px - 10px);
+}
+
+.fotografovani {
+  min-height: calc(100vh - 90px - 283px - 50px - 50px);
+}
+
+.marketingSoc {
+  min-height: calc(100vh - 90px - 283px - 50px - 50px - 10px);
+}
+
+.weboveStranky {
+  min-height: calc(100vh - 90px - 283px - 50px - 50px - 10px);
+}
+
 .textovaSekce h1 {
   font-family: medium;
   font-size: 31px;
@@ -842,6 +866,8 @@ asi cely
 .projekty {
   padding: 0 !important;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: -30px;
 }
 
 .projekty li {
@@ -900,9 +926,9 @@ asi cely
 }
 
 .dolniProjekt p {
-  font-size: 18px;
+  font-size: 16px;
   color: #555F6E;
-  line-height: 21px;
+  line-height: 20px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -1035,6 +1061,7 @@ asi cely
 
 .kontakty {
   padding-bottom: 30px;
+  min-height: calc(100vh - 90px - 283px - 50px - 50px - 30px);
 }
 
 /*****************************************
