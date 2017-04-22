@@ -709,6 +709,7 @@ cely asi
   width: calc(62% - 80px);
   max-width: 480px;
   display: inline-block;
+  float: left;
 }
 
 .mainObrazek {
@@ -717,11 +718,13 @@ cely asi
 }
 
 .obrazkovyBlock {
-  display: inline-block;
-  float: right;
+  display: block;
+  float: none;
   text-align: right;
   width: 38%;
-  margin-top: 25px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .obrazkovyBlock a img {
@@ -752,6 +755,24 @@ cely asi
   margin-bottom: 50px;
 }
 
+.weboveStranky .napisteNam {
+  position: relative;
+  top: 60px;
+}
+
+.weboveStranky {
+  padding-bottom: 10px;
+}
+
+.marketingSoc .napisteNam {
+  position: relative;
+  top: 60px;
+}
+
+.marketingSoc {
+  padding-bottom: 10px;
+}
+
 /*****************************************
 
 queries
@@ -771,6 +792,28 @@ queries
     width: 100%;
     max-width: none;
     margin-bottom: 50px;
+  }
+
+  .marketingSoc .textovaSekceInner {
+    padding-bottom: 30px;
+  }
+
+  .weboveStranky .napisteNam {
+    position: static;
+    top: 60px;
+  }
+
+  .weboveStranky {
+    padding-bottom: 0;
+  }
+
+  .marketingSoc .napisteNam {
+    position: static;
+    top: 60px;
+  }
+
+  .marketingSoc {
+    padding-bottom: 0;
   }
 }
 
