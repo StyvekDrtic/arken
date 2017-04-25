@@ -896,6 +896,8 @@ asi cely
   -moz-box-shadow:    inset 0 -10px 50px -31px #b5b5b5;
   -webkit-box-shadow: inset 0 -10px 50px -31px #b5b5b5;
   box-shadow:         inset 0 -10px 50px -31px #b5b5b5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .lanistae {
