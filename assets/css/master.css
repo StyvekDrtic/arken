@@ -998,6 +998,16 @@ asi cely
   box-shadow:         inset 0 -10px 50px -31px #b5b5b5;
 }
 
+.bydleniSvojetice {
+  background: url("../img/web4.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -moz-box-shadow:    inset 0 -10px 50px -31px #b5b5b5;
+  -webkit-box-shadow: inset 0 -10px 50px -31px #b5b5b5;
+  box-shadow:         inset 0 -10px 50px -31px #b5b5b5;
+}
+
 .dolniProjekt {
   width: calc(100% - 50px);
   margin: 20px auto;
