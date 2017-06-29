@@ -103,7 +103,7 @@ jumbotron & nav
   color: #555F6E;
   list-style: none;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   font-size: 20px;
 }
 
@@ -1070,6 +1070,33 @@ queries
 @media only screen and (max-width: 460px) {
   .projekt {
     width: calc(100%);
+  }
+
+  .textovaSekce ul li {
+    width: calc(100% - 20px);
+  }
+
+  .dolniProjekt p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+
+  .hashtags {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  .horniProjekt {
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textovaSekce ul li {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
