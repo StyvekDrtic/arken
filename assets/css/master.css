@@ -1098,6 +1098,10 @@ queries
     margin: 0 auto;
     margin-bottom: 50px;
   }
+
+  .kontaktyClovek li:first-child {
+    margin-bottom: 10px !important;
+  }
 }
 
 /*****************************************
