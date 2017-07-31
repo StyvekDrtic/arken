@@ -1,3 +1,6 @@
+var bannerPryc = '<div class="bannerPryc"><p>Omlouváme se, ale v tuto chvíli nepřijímáme jakékoliv nové nabídky :(</p></div>';
+$("body").append(bannerPryc);
+
 $(".otevritMenu").click(function() {
   $(".mobilniMenu").css("display", "block");
   $("section").css("-webkit-filter", "blur(3px)");

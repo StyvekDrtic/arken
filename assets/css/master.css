@@ -69,6 +69,35 @@ body {
 
 /*****************************************
 
+banner pryc
+
+*****************************************/
+
+.bannerPryc {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000;
+  background: radial-gradient(50% 100%, #789FE5 0%, #476CD4 100%);;
+  -webkit-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+}
+
+.bannerPryc p {
+  text-align: center;
+  color: #fff;
+  font-family: bold;
+  display: block;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 17px;
+  line-height: 22px;
+}
+
+/*****************************************
+
 homepage
 
 *****************************************/
